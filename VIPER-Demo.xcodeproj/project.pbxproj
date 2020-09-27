@@ -17,6 +17,14 @@
 		CF2EB3C52520E2E400464D1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2EB3C32520E2E400464D1F /* LaunchScreen.storyboard */; };
 		CF2EB3D02520E2E400464D1F /* VIPER_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EB3CF2520E2E400464D1F /* VIPER_DemoTests.swift */; };
 		CF2EB3DB2520E2E400464D1F /* VIPER_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EB3DA2520E2E400464D1F /* VIPER_DemoUITests.swift */; };
+		CF2EB3ED2520E9C400464D1F /* UIStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EB3EC2520E9C400464D1F /* UIStoryboard.swift */; };
+		CF2EB3EF2520E9E500464D1F /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EB3EE2520E9E500464D1F /* InteractorInterface.swift */; };
+		CF2EB3F12520EA0E00464D1F /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EB3F02520EA0E00464D1F /* ViewInterface.swift */; };
+		CF2EB3F32520EA2E00464D1F /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EB3F22520EA2E00464D1F /* PresenterInterface.swift */; };
+		CF2EB3F52520EA4900464D1F /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EB3F42520EA4900464D1F /* BaseRouter.swift */; };
+		CF2EB3F82520EB3F00464D1F /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EB3F72520EB3F00464D1F /* Validator.swift */; };
+		CF2EB3FA2520EB5000464D1F /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EB3F92520EB5000464D1F /* EmailValidator.swift */; };
+		CF2EB3FC2520EB6100464D1F /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2EB3FB2520EB6100464D1F /* PasswordValidator.swift */; };
 		EBBDAFBB1A38439D047D9B43 /* Pods_VIPER_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9EDD29E3BD06C77F2C5D19 /* Pods_VIPER_DemoTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +67,14 @@
 		CF2EB3D62520E2E400464D1F /* VIPER-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2EB3DA2520E2E400464D1F /* VIPER_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_DemoUITests.swift; sourceTree = "<group>"; };
 		CF2EB3DC2520E2E400464D1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2EB3EC2520E9C400464D1F /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		CF2EB3EE2520E9E500464D1F /* InteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		CF2EB3F02520EA0E00464D1F /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		CF2EB3F22520EA2E00464D1F /* PresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		CF2EB3F42520EA4900464D1F /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		CF2EB3F72520EB3F00464D1F /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		CF2EB3F92520EB5000464D1F /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		CF2EB3FB2520EB6100464D1F /* PasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
 		E68E3B530B81768A518F703C /* Pods-VIPER-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER-Demo.release.xcconfig"; path = "Target Support Files/Pods-VIPER-Demo/Pods-VIPER-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		EC9EDD29E3BD06C77F2C5D19 /* Pods_VIPER_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -139,6 +155,7 @@
 		CF2EB3B72520E2E200464D1F /* VIPER-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				CF2EB3E92520E97F00464D1F /* Common */,
 				CF2EB3E82520E4D700464D1F /* Login */,
 				CF2EB3B82520E2E200464D1F /* AppDelegate.swift */,
 				CF2EB3BA2520E2E200464D1F /* SceneDelegate.swift */,
@@ -174,6 +191,45 @@
 			children = (
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		CF2EB3E92520E97F00464D1F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CF2EB3F62520EB2F00464D1F /* Validators */,
+				CF2EB3EB2520E9B000464D1F /* VIPER */,
+				CF2EB3EA2520E98E00464D1F /* Services */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CF2EB3EA2520E98E00464D1F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CF2EB3EB2520E9B000464D1F /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				CF2EB3EC2520E9C400464D1F /* UIStoryboard.swift */,
+				CF2EB3EE2520E9E500464D1F /* InteractorInterface.swift */,
+				CF2EB3F02520EA0E00464D1F /* ViewInterface.swift */,
+				CF2EB3F22520EA2E00464D1F /* PresenterInterface.swift */,
+				CF2EB3F42520EA4900464D1F /* BaseRouter.swift */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		CF2EB3F62520EB2F00464D1F /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				CF2EB3F72520EB3F00464D1F /* Validator.swift */,
+				CF2EB3F92520EB5000464D1F /* EmailValidator.swift */,
+				CF2EB3FB2520EB6100464D1F /* PasswordValidator.swift */,
+			);
+			path = Validators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -415,9 +471,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2EB3ED2520E9C400464D1F /* UIStoryboard.swift in Sources */,
+				CF2EB3F82520EB3F00464D1F /* Validator.swift in Sources */,
+				CF2EB3EF2520E9E500464D1F /* InteractorInterface.swift in Sources */,
 				CF2EB3BD2520E2E200464D1F /* ViewController.swift in Sources */,
 				CF2EB3B92520E2E200464D1F /* AppDelegate.swift in Sources */,
+				CF2EB3FC2520EB6100464D1F /* PasswordValidator.swift in Sources */,
+				CF2EB3F12520EA0E00464D1F /* ViewInterface.swift in Sources */,
 				CF2EB3BB2520E2E200464D1F /* SceneDelegate.swift in Sources */,
+				CF2EB3FA2520EB5000464D1F /* EmailValidator.swift in Sources */,
+				CF2EB3F32520EA2E00464D1F /* PresenterInterface.swift in Sources */,
+				CF2EB3F52520EA4900464D1F /* BaseRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
