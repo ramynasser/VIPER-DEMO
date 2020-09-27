@@ -7,7 +7,9 @@ target 'VIPER-Demo' do
 
   # Pods for VIPER-Demo
      pod 'Alamofire'
-     pod 'Kingfisher'
+     pod 'SVProgressHUD'
+     pod 'AlamofireImage'
+     pod 'AlamofireNetworkActivityIndicator'
   target 'VIPER-DemoTests' do
     inherit! :search_paths
     # Pods for testing
